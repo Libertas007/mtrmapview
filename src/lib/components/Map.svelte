@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import {
 		l1Active,
 		l2Active,
@@ -28,6 +29,94 @@
 	hideFareZones.subscribe((v) => {
 		zoneBackgroundColor = v ? '#1e1e1e' : '#3c3c3c';
 	});
+
+	let previousKey = '';
+
+	if (browser) {
+		document.onkeydown = (e) => {
+			if (previousKey == '' && (e.key.toUpperCase() == 'M' || e.key.toUpperCase() == 'L')) {
+				previousKey = e.key;
+				return;
+			}
+
+			let combination = `${previousKey}${e.key}`.toUpperCase();
+
+			switch (combination) {
+				case 'M1':
+					if ($allActive) {
+						setAll(false);
+						$m1Active = true;
+					} else {
+						setAll(true);
+					}
+					break;
+				case 'M2':
+					if ($allActive) {
+						setAll(false);
+						$m2Active = true;
+					} else {
+						setAll(true);
+					}
+					break;
+				case 'M3':
+					if ($allActive) {
+						setAll(false);
+						$m3Active = true;
+					} else {
+						setAll(true);
+					}
+					break;
+				case 'L1':
+					if ($allActive) {
+						setAll(false);
+						$l1Active = true;
+					} else {
+						setAll(true);
+					}
+					break;
+				case 'L2':
+					if ($allActive) {
+						setAll(false);
+						$l2Active = true;
+					} else {
+						setAll(true);
+					}
+					break;
+				case 'L3':
+					if ($allActive) {
+						setAll(false);
+						$l3Active = true;
+					} else {
+						setAll(true);
+					}
+					break;
+				case 'L4':
+					if ($allActive) {
+						setAll(false);
+						$l4Active = true;
+					} else {
+						setAll(true);
+					}
+					break;
+				case 'L5':
+					if ($allActive) {
+						setAll(false);
+						$l5Active = true;
+					} else {
+						setAll(true);
+					}
+					break;
+				case 'C':
+					setAll(true);
+					break;
+				case 'Z':
+					$hideFareZones = !$hideFareZones;
+					break;
+			}
+
+			previousKey = '';
+		};
+	}
 </script>
 
 <svg width="100%" viewBox="0 0 3907 2828" fill="none" xmlns="http://www.w3.org/2000/svg">
