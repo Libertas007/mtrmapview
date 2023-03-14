@@ -1,5 +1,7 @@
 <script>
 	import Map from '$lib/components/Map.svelte';
+	import Sidebar from '$lib/components/Sidebar.svelte';
+	import TopBar from '$lib/components/TopBar.svelte';
 </script>
 
 <svelte:head>
@@ -11,11 +13,19 @@
 	<div class="over">
 		<div />
 	</div>
+	<TopBar />
 
-	<Map />
+	<div class="sidebyside">
+		<Sidebar />
+		<Map />
+	</div>
 </section>
 
 <style>
+	.sidebyside {
+		display: flex;
+	}
+
 	.over {
 		position: absolute;
 		z-index: 10;

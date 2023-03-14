@@ -9,3 +9,4 @@ export const l3Active = writable<boolean>(true);
 export const l4Active = writable<boolean>(true);
 export const l5Active = writable<boolean>(true);
 export const allActive = writable<boolean>(true);
+export const hideFareZones = writable<boolean>(false);

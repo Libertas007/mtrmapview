@@ -8,7 +8,8 @@
 		m1Active,
 		m2Active,
 		m3Active,
-		allActive
+		allActive,
+		hideFareZones
 	} from '../../routes/stores';
 
 	function setAll(value: boolean) {
@@ -28,16 +29,18 @@
 	<g id="Day Map" clip-path="url(#clip0_425_170)">
 		<rect width="3907" height="2828" fill="white" />
 		<path id="Background" d="M0 0H3907V2828H0V0Z" fill="#1E1E1E" />
-		<path
-			id="Zone 1 background"
-			d="M1748 969.5C1803.23 969.5 1848 924.728 1848 869.5V-8.00001C1848 -63.2285 1892.77 -108 1948 -108H2025C2080.23 -108 2125 -63.2285 2125 -8V378C2125 433.228 2169.77 478 2225 478H2678C2733.23 478 2778 522.772 2778 578V1031.5V1315C2778 1370.23 2733.23 1415 2678 1415H2470.5C2415.27 1415 2370.5 1459.77 2370.5 1515V1776.25C2370.5 1811.46 2399.04 1840 2434.25 1840V1840C2469.46 1840 2498 1868.54 2498 1903.75V2133C2498 2188.23 2453.23 2233 2398 2233H2329C2273.77 2233 2229 2277.77 2229 2333V2431C2229 2486.23 2184.23 2531 2129 2531H1428C1372.77 2531 1328 2575.77 1328 2631V2894.5C1328 2949.73 1283.23 2994.5 1228 2994.5H1202C1146.77 2994.5 1102 2949.73 1102 2894.5V2531V2292.5C1102 2237.27 1146.77 2192.5 1202 2192.5H1432C1487.23 2192.5 1532 2147.73 1532 2092.5V1863C1532 1807.77 1576.77 1763 1632 1763H1748C1803.23 1763 1848 1718.23 1848 1663V1529C1848 1473.77 1803.23 1429 1748 1429H1715.5C1660.27 1429 1615.5 1384.23 1615.5 1329V1069.5C1615.5 1014.27 1660.27 969.5 1715.5 969.5H1748Z"
-			fill="#3C3C3C"
-		/>
-		<path
-			id="Zone 3 background"
-			d="M3328 922.5V-55C3328 -110.228 3372.77 -155 3428 -155H3509.69H3838C3893.23 -155 3938 -110.228 3938 -55V431V984.5V1368V1793V2186V2906C3938 2961.23 3893.23 3006 3838 3006H3428C3372.77 3006 3328 2961.23 3328 2906V2145.5V1716V1382V922.5Z"
-			fill="#3C3C3C"
-		/>
+		{#if !$hideFareZones}
+			<path
+				id="Zone 1 background"
+				d="M1748 969.5C1803.23 969.5 1848 924.728 1848 869.5V-8.00001C1848 -63.2285 1892.77 -108 1948 -108H2025C2080.23 -108 2125 -63.2285 2125 -8V378C2125 433.228 2169.77 478 2225 478H2678C2733.23 478 2778 522.772 2778 578V1031.5V1315C2778 1370.23 2733.23 1415 2678 1415H2470.5C2415.27 1415 2370.5 1459.77 2370.5 1515V1776.25C2370.5 1811.46 2399.04 1840 2434.25 1840V1840C2469.46 1840 2498 1868.54 2498 1903.75V2133C2498 2188.23 2453.23 2233 2398 2233H2329C2273.77 2233 2229 2277.77 2229 2333V2431C2229 2486.23 2184.23 2531 2129 2531H1428C1372.77 2531 1328 2575.77 1328 2631V2894.5C1328 2949.73 1283.23 2994.5 1228 2994.5H1202C1146.77 2994.5 1102 2949.73 1102 2894.5V2531V2292.5C1102 2237.27 1146.77 2192.5 1202 2192.5H1432C1487.23 2192.5 1532 2147.73 1532 2092.5V1863C1532 1807.77 1576.77 1763 1632 1763H1748C1803.23 1763 1848 1718.23 1848 1663V1529C1848 1473.77 1803.23 1429 1748 1429H1715.5C1660.27 1429 1615.5 1384.23 1615.5 1329V1069.5C1615.5 1014.27 1660.27 969.5 1715.5 969.5H1748Z"
+				fill="#3C3C3C"
+			/>
+			<path
+				id="Zone 3 background"
+				d="M3328 922.5V-55C3328 -110.228 3372.77 -155 3428 -155H3509.69H3838C3893.23 -155 3938 -110.228 3938 -55V431V984.5V1368V1793V2186V2906C3938 2961.23 3893.23 3006 3838 3006H3428C3372.77 3006 3328 2961.23 3328 2906V2145.5V1716V1382V922.5Z"
+				fill="#3C3C3C"
+			/>
+		{/if}
 		<line
 			id="Station connection"
 			x1="1335.47"
@@ -1816,87 +1819,89 @@
 				letter-spacing="0em"><tspan x="2263.88" y="2708.09">!</tspan></text
 			>
 		</g>
-		<text
-			id="Zone 0"
-			fill="#3C3C3C"
-			xml:space="preserve"
-			style="white-space: pre"
-			font-family="Inter"
-			font-size="64"
-			letter-spacing="0em"><tspan x="665" y="1884.77">ZONE 0</tspan></text
-		>
-		<text
-			id="Zone 0_2"
-			fill="#3C3C3C"
-			xml:space="preserve"
-			style="white-space: pre"
-			font-family="Inter"
-			font-size="64"
-			letter-spacing="0em"><tspan x="1349" y="457.773">ZONE 0</tspan></text
-		>
-		<text
-			id="Zone 2"
-			fill="#3C3C3C"
-			xml:space="preserve"
-			style="white-space: pre"
-			font-family="Inter"
-			font-size="64"
-			letter-spacing="0em"><tspan x="2581" y="2271.77">ZONE 2</tspan></text
-		>
-		<text
-			id="Zone 2_2"
-			fill="#3C3C3C"
-			xml:space="preserve"
-			style="white-space: pre"
-			font-family="Inter"
-			font-size="64"
-			letter-spacing="0em"><tspan x="2431" y="251.773">ZONE 2</tspan></text
-		>
-		<text
-			id="Zone 1"
-			fill="#1E1E1E"
-			xml:space="preserve"
-			style="white-space: pre"
-			font-family="Inter"
-			font-size="64"
-			letter-spacing="0em"><tspan x="2011" y="1514.77">ZONE 1</tspan></text
-		>
-		<text
-			id="Zone 3"
-			fill="#1E1E1E"
-			xml:space="preserve"
-			style="white-space: pre"
-			font-family="Inter"
-			font-size="64"
-			letter-spacing="0em"><tspan x="3484" y="600.773">ZONE 3</tspan></text
-		>
-		<text
-			id="Zone 3_2"
-			fill="#1E1E1E"
-			xml:space="preserve"
-			style="white-space: pre"
-			font-family="Inter"
-			font-size="64"
-			letter-spacing="0em"><tspan x="3484" y="2442.77">ZONE 3</tspan></text
-		>
-		<text
-			id="Zone 1_2"
-			fill="#1E1E1E"
-			xml:space="preserve"
-			style="white-space: pre"
-			font-family="Inter"
-			font-size="64"
-			letter-spacing="0em"><tspan x="1163" y="2468.77">ZONE 1</tspan></text
-		>
-		<text
-			id="Zone 1_3"
-			fill="#1E1E1E"
-			xml:space="preserve"
-			style="white-space: pre"
-			font-family="Inter"
-			font-size="64"
-			letter-spacing="0em"><tspan x="1965" y="600.773">ZONE 1</tspan></text
-		>
+		{#if !$hideFareZones}
+			<text
+				id="Zone 0"
+				fill="#3C3C3C"
+				xml:space="preserve"
+				style="white-space: pre"
+				font-family="Inter"
+				font-size="64"
+				letter-spacing="0em"><tspan x="665" y="1884.77">ZONE 0</tspan></text
+			>
+			<text
+				id="Zone 0_2"
+				fill="#3C3C3C"
+				xml:space="preserve"
+				style="white-space: pre"
+				font-family="Inter"
+				font-size="64"
+				letter-spacing="0em"><tspan x="1349" y="457.773">ZONE 0</tspan></text
+			>
+			<text
+				id="Zone 2"
+				fill="#3C3C3C"
+				xml:space="preserve"
+				style="white-space: pre"
+				font-family="Inter"
+				font-size="64"
+				letter-spacing="0em"><tspan x="2581" y="2271.77">ZONE 2</tspan></text
+			>
+			<text
+				id="Zone 2_2"
+				fill="#3C3C3C"
+				xml:space="preserve"
+				style="white-space: pre"
+				font-family="Inter"
+				font-size="64"
+				letter-spacing="0em"><tspan x="2431" y="251.773">ZONE 2</tspan></text
+			>
+			<text
+				id="Zone 1"
+				fill="#1E1E1E"
+				xml:space="preserve"
+				style="white-space: pre"
+				font-family="Inter"
+				font-size="64"
+				letter-spacing="0em"><tspan x="2011" y="1514.77">ZONE 1</tspan></text
+			>
+			<text
+				id="Zone 3"
+				fill="#1E1E1E"
+				xml:space="preserve"
+				style="white-space: pre"
+				font-family="Inter"
+				font-size="64"
+				letter-spacing="0em"><tspan x="3484" y="600.773">ZONE 3</tspan></text
+			>
+			<text
+				id="Zone 3_2"
+				fill="#1E1E1E"
+				xml:space="preserve"
+				style="white-space: pre"
+				font-family="Inter"
+				font-size="64"
+				letter-spacing="0em"><tspan x="3484" y="2442.77">ZONE 3</tspan></text
+			>
+			<text
+				id="Zone 1_2"
+				fill="#1E1E1E"
+				xml:space="preserve"
+				style="white-space: pre"
+				font-family="Inter"
+				font-size="64"
+				letter-spacing="0em"><tspan x="1163" y="2468.77">ZONE 1</tspan></text
+			>
+			<text
+				id="Zone 1_3"
+				fill="#1E1E1E"
+				xml:space="preserve"
+				style="white-space: pre"
+				font-family="Inter"
+				font-size="64"
+				letter-spacing="0em"><tspan x="1965" y="600.773">ZONE 1</tspan></text
+			>
+		{/if}
 		<path
 			id="Local Trains 5"
 			on:click={() => {
