@@ -2,13 +2,18 @@
 	import { page } from '$app/stores';
 	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
+	import MetroLogo from './MetroLogo.svelte';
+	import LocalTrainsLogo from './LocalTrainsLogo.svelte';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
+		<div style="width: 10px;" />
+		<MetroLogo size={35} />
+		<div style="width: 10px;" />
+		<LocalTrainsLogo size={35} />
+		<div style="width: 10px;" />
+		<p class="logo-text">METRO AND LOCAL TRAINS MAP</p>
 	</div>
 
 	<nav>
@@ -17,14 +22,14 @@
 		</svg>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
+				<a href="/">Map</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 				<a href="/about">About</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
+			<!-- <li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
 				<a href="/sverdle">Sverdle</a>
-			</li>
+			</li> -->
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
@@ -32,7 +37,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
+		<a href="https://github.com/Libertas007/mtrmapview">
 			<img src={github} alt="GitHub" />
 		</a>
 	</div>
@@ -47,14 +52,12 @@
 	.corner {
 		width: 3em;
 		height: 3em;
-	}
-
-	.corner a {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: start;
 		width: 100%;
 		height: 100%;
+		font-weight: 600;
 	}
 
 	.corner img {
@@ -63,20 +66,17 @@
 		object-fit: contain;
 	}
 
+	.corner a {
+		display: flex;
+		align-items: center;
+		justify-content: end;
+		width: 100%;
+		height: 100%;
+	}
+
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
 	}
 
 	ul {
@@ -88,16 +88,21 @@
 		justify-content: center;
 		align-items: center;
 		list-style: none;
-		background: var(--background);
 		background-size: contain;
 	}
 
 	li {
 		position: relative;
-		height: 100%;
+		height: 70%;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
 	}
 
-	li[aria-current='page']::before {
+	li[aria-current='page'] {
+		border-top: 10px solid var(--color-theme-1);
+	}
+
+	/* li[aria-current='page']::before {
 		--size: 6px;
 		content: '';
 		width: 0;
@@ -107,7 +112,7 @@
 		left: calc(50% - var(--size));
 		border: var(--size) solid transparent;
 		border-top: var(--size) solid var(--color-theme-1);
-	}
+	} */
 
 	nav a {
 		display: flex;
