@@ -1,3 +1,27 @@
+<script lang="ts">
+	let m1Active = true;
+	let m2Active = true;
+	let m3Active = true;
+	let l1Active = true;
+	let l2Active = true;
+	let l3Active = true;
+	let l4Active = true;
+	let l5Active = true;
+	let allActive = true;
+
+	function setAll(value: boolean) {
+		m1Active = value;
+		m2Active = value;
+		m3Active = value;
+		l1Active = value;
+		l2Active = value;
+		l3Active = value;
+		l4Active = value;
+		l5Active = value;
+		allActive = value;
+	}
+</script>
+
 <svg width="100%" viewBox="0 0 3907 2828" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<g clip-path="url(#clip0_425_170)">
 		<rect width="3907" height="2828" fill="white" />
@@ -21,6 +45,16 @@
 		/>
 		<path d="M1641 2257L1741 2257" stroke="#D9D9D9" stroke-width="10" stroke-dasharray="10 10" />
 		<path
+			on:click={() => {
+				if (allActive) {
+					setAll(false);
+					m2Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="m2 line"
+			class:dim={!m2Active}
 			d="M2243 109V844C2243 899.228 2198.23 944 2143 944H150.5"
 			stroke="#1C48E2"
 			stroke-width="30"
@@ -28,6 +62,16 @@
 			stroke-linejoin="round"
 		/>
 		<path
+			on:click={() => {
+				if (allActive) {
+					setAll(false);
+					m1Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="m1 line"
+			class:dim={!m1Active}
 			d="M1755 2257V1695C1755 1639.77 1710.23 1595 1655 1595H919C863.772 1595 819 1550.23 819 1495V944"
 			stroke="#079F4D"
 			stroke-width="30"
@@ -38,12 +82,32 @@
 		<rect x="1448" y="929" width="30" height="30" fill="#1E1E1E" />
 		<rect x="1448" y="1506" width="30" height="13" fill="#1E1E1E" />
 		<path
+			on:click={() => {
+				if (allActive) {
+					setAll(false);
+					l4Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l4 line"
+			class:dim={!l4Active}
 			d="M1636 2731L1636 2037C1636 1970.73 1689.73 1917 1756 1917H2268L2815 1917C2892.32 1917 2955 1854.32 2955 1777V1493"
 			stroke="#0CA3E3"
 			stroke-width="10"
 			stroke-linecap="square"
 		/>
 		<path
+			on:click={() => {
+				if (allActive) {
+					setAll(false);
+					l4Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l4 line"
+			class:dim={!l4Active}
 			d="M1616 2731L1616 2037C1616 1959.68 1678.68 1897 1756 1897H2255L2815 1897C2881.27 1897 2935 1843.27 2935 1777V1493.19"
 			stroke="#0CA3E3"
 			stroke-width="10"
@@ -58,36 +122,96 @@
 			fill="#1E1E1E"
 		/>
 		<path
+			on:click={() => {
+				if (allActive) {
+					setAll(false);
+					l1Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l1 line"
+			class:dim={!l1Active}
 			d="M2059 1113V1116C2059 1171.23 2103.77 1216 2159 1216L2765 1216C2825.75 1216 2875 1265.25 2875 1326V1777C2875 1810.14 2848.14 1837 2815 1837L2261.75 1837L1553 1837C1508.82 1837 1473 1801.18 1473 1757L1473 934V795C1473 739.772 1428.23 695 1373 695H1123"
 			stroke="#DDB011"
 			stroke-width="10"
 			stroke-linecap="square"
 		/>
 		<path
+			on:click={() => {
+				if (allActive) {
+					setAll(false);
+					l1Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l1 line"
+			class:dim={!l1Active}
 			d="M2079 1113V1116C2079 1160.18 2114.82 1196 2159 1196L2765 1196C2836.8 1196 2895 1254.2 2895 1326V1777C2895 1821.18 2859.18 1857 2815 1857L2264.25 1857L1553 1857C1497.77 1857 1453 1812.23 1453 1757L1453 934L1450.43 793.539C1449.64 749.933 1414.06 715 1370.45 715H1124"
 			stroke="#DDB011"
 			stroke-width="10"
 			stroke-linecap="square"
 		/>
 		<path
+			on:click={() => {
+				if (allActive) {
+					setAll(false);
+					l2Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l2 line"
+			class:dim={!l2Active}
 			d="M1931 1246H2222.86H2765C2809.18 1246 2845 1281.82 2845 1326V1513"
 			stroke="#D81159"
 			stroke-width="10"
 			stroke-linecap="square"
 		/>
 		<path
+			on:click={() => {
+				if (allActive) {
+					setAll(false);
+					l2Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l2 line"
+			class:dim={!l2Active}
 			d="M2014 1226H2233.33H2765C2820.23 1226 2865 1270.77 2865 1326V1513"
 			stroke="#D81159"
 			stroke-width="10"
 			stroke-linecap="square"
 		/>
 		<path
+			on:click={() => {
+				if (allActive) {
+					setAll(false);
+					l3Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l3 line"
+			class:dim={!l3Active}
 			d="M1356 1585V1787C1356 1831.18 1391.82 1867 1436 1867H2261.31H2815C2864.71 1867 2905 1826.71 2905 1777V1084C2905 1028.77 2860.23 984 2805 984H1977"
 			stroke="#7813A8"
 			stroke-width="10"
 			stroke-linecap="square"
 		/>
 		<path
+			on:click={() => {
+				if (allActive) {
+					setAll(false);
+					l3Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l3 line"
+			class:dim={!l3Active}
 			d="M1336 1585V1787C1336 1842.23 1380.77 1887 1436 1887H2264.69H2815C2875.75 1887 2925 1837.75 2925 1777V1084C2925 1017.73 2871.27 964 2805 964H1977"
 			stroke="#7813A8"
 			stroke-width="10"
@@ -95,12 +219,32 @@
 		/>
 		<rect x="1479" y="1745" width="28" height="164" fill="#1E1E1E" />
 		<path
+			on:click={() => {
+				if (allActive) {
+					setAll(false);
+					l2Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l2 line"
+			class:dim={!l2Active}
 			d="M1606 2731V2124.72C1606 2093.12 1580.38 2067.5 1548.78 2067.5V2067.5C1523.5 2067.5 1503 2047 1503 2021.72L1503 1326C1503 1281.82 1538.82 1246 1583 1246H1949C2004.23 1246 2049 1201.23 2049 1146V1118.5V1113"
 			stroke="#D81159"
 			stroke-width="10"
 			stroke-linecap="square"
 		/>
 		<path
+			on:click={() => {
+				if (allActive) {
+					setAll(false);
+					l2Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l2 line"
+			class:dim={!l2Active}
 			d="M1586 2731V2131.63C1586 2106.34 1565.5 2085.85 1540.22 2085.85V2085.85C1508.62 2085.85 1483 2060.23 1483 2028.63L1483 1326C1483 1270.77 1527.77 1226 1583 1226H1949C1993.18 1226 2029 1190.18 2029 1146V1124.5V1113"
 			stroke="#D81159"
 			stroke-width="10"
@@ -421,11 +565,31 @@
 		<rect x="2059" y="1113" width="20" height="20" fill="#3C3C3C" />
 		<circle cx="819" cy="1084" r="13" fill="#1E1E1E" />
 		<path
+			on:click={() => {
+				if (allActive) {
+					setAll(false);
+					m3Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="m3 line"
+			class:dim={!m3Active}
 			d="M974 526H491C435.772 526 391 570.772 391 626V784C391 839.228 435.772 884 491 884H974C1029.23 884 1074 839.228 1074 784V626C1074 570.772 1029.23 526 974 526Z"
 			stroke="#FF0000"
 			stroke-width="30"
 		/>
 		<path
+			on:click={() => {
+				if (allActive) {
+					setAll(false);
+					m1Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="m1 line"
+			class:dim={!m1Active}
 			d="M974 496H491C419.203 496 361 554.203 361 626V784C361 855.797 419.203 914 491 914H974C1045.8 914 1104 855.797 1104 784V626C1104 554.203 1045.8 496 974 496Z"
 			stroke="#079F4D"
 			stroke-width="30"
@@ -802,12 +966,32 @@
 			fill="#1E1E1E"
 		/>
 		<path
+			on:click={() => {
+				if (allActive) {
+					setAll(false);
+					l5Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l5 line"
+			class:dim={!l5Active}
 			d="M2965 1493H3372.43L3806 1493"
 			stroke="#FF8200"
 			stroke-width="10"
 			stroke-linecap="square"
 		/>
 		<path
+			on:click={() => {
+				if (allActive) {
+					setAll(false);
+					l5Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l5 line"
+			class:dim={!l5Active}
 			d="M2965 1513H3372.43L3806 1513"
 			stroke="#FF8200"
 			stroke-width="10"
@@ -919,3 +1103,14 @@
 		</clipPath>
 	</defs>
 </svg>
+
+<style>
+	.line {
+		cursor: pointer;
+		transition: all 400ms;
+	}
+
+	.dim {
+		opacity: 0.4;
+	}
+</style>

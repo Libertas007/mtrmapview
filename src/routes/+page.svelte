@@ -3,8 +3,8 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>MTR Map View</title>
+	<meta name="description" content="Map of my MTR world in Minecraft" />
 </svelte:head>
 
 <section>
