@@ -37,7 +37,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/Libertas007/mtrmapview">
+		<a href="https://github.com/Libertas007/mtrmapview" target="_blank">
 			<img src={github} alt="GitHub" />
 		</a>
 	</div>
@@ -70,8 +70,11 @@
 		display: flex;
 		align-items: center;
 		justify-content: end;
-		width: 100%;
 		height: 100%;
+	}
+
+	.corner:last-child {
+		justify-content: end;
 	}
 
 	nav {
