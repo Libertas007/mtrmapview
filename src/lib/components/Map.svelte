@@ -23,6 +23,11 @@
 		$l5Active = value;
 		$allActive = value;
 	}
+
+	let zoneBackgroundColor = '#3c3c3c';
+	hideFareZones.subscribe((v) => {
+		zoneBackgroundColor = v ? '#1e1e1e' : '#3c3c3c';
+	});
 </script>
 
 <svg width="100%" viewBox="0 0 3907 2828" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,12 +38,12 @@
 			<path
 				id="Zone 1 background"
 				d="M1748 969.5C1803.23 969.5 1848 924.728 1848 869.5V-8.00001C1848 -63.2285 1892.77 -108 1948 -108H2025C2080.23 -108 2125 -63.2285 2125 -8V378C2125 433.228 2169.77 478 2225 478H2678C2733.23 478 2778 522.772 2778 578V1031.5V1315C2778 1370.23 2733.23 1415 2678 1415H2470.5C2415.27 1415 2370.5 1459.77 2370.5 1515V1776.25C2370.5 1811.46 2399.04 1840 2434.25 1840V1840C2469.46 1840 2498 1868.54 2498 1903.75V2133C2498 2188.23 2453.23 2233 2398 2233H2329C2273.77 2233 2229 2277.77 2229 2333V2431C2229 2486.23 2184.23 2531 2129 2531H1428C1372.77 2531 1328 2575.77 1328 2631V2894.5C1328 2949.73 1283.23 2994.5 1228 2994.5H1202C1146.77 2994.5 1102 2949.73 1102 2894.5V2531V2292.5C1102 2237.27 1146.77 2192.5 1202 2192.5H1432C1487.23 2192.5 1532 2147.73 1532 2092.5V1863C1532 1807.77 1576.77 1763 1632 1763H1748C1803.23 1763 1848 1718.23 1848 1663V1529C1848 1473.77 1803.23 1429 1748 1429H1715.5C1660.27 1429 1615.5 1384.23 1615.5 1329V1069.5C1615.5 1014.27 1660.27 969.5 1715.5 969.5H1748Z"
-				fill="#3C3C3C"
+				fill={zoneBackgroundColor}
 			/>
 			<path
 				id="Zone 3 background"
 				d="M3328 922.5V-55C3328 -110.228 3372.77 -155 3428 -155H3509.69H3838C3893.23 -155 3938 -110.228 3938 -55V431V984.5V1368V1793V2186V2906C3938 2961.23 3893.23 3006 3838 3006H3428C3372.77 3006 3328 2961.23 3328 2906V2145.5V1716V1382V922.5Z"
-				fill="#3C3C3C"
+				fill={zoneBackgroundColor}
 			/>
 		{/if}
 		<line
@@ -93,7 +98,7 @@
 			stroke-width="30"
 			stroke-linecap="square"
 		/>
-		<rect id="Rectangle 32" x="1740" y="1834" width="30" height="83" fill="#3C3C3C" />
+		<rect id="Rectangle 32" x="1740" y="1834" width="30" height="83" fill={zoneBackgroundColor} />
 		<rect id="Rectangle 33" x="1331" y="1580" width="30" height="30" fill="#1E1E1E" />
 		<rect id="Rectangle 34" x="1448" y="929" width="30" height="30" fill="#1E1E1E" />
 		<rect id="Rectangle 35" x="1448" y="1506" width="30" height="13" fill="#1E1E1E" />
@@ -1095,7 +1100,7 @@
 			</g>
 		</g>
 		<g id="Station Vertical_2">
-			<circle id="Ellipse 17_5" cx="1626" cy="2257" r="13" fill="#3C3C3C" />
+			<circle id="Ellipse 17_5" cx="1626" cy="2257" r="13" fill={zoneBackgroundColor} />
 		</g>
 		<g id="Station Vertical_3">
 			<circle id="Ellipse 17_6" cx="1493" cy="1983" r="13" fill="#1E1E1E" />
@@ -1107,7 +1112,7 @@
 			<circle id="Ellipse 17_8" cx="1493" cy="1531" r="13" fill="#1E1E1E" />
 		</g>
 		<g id="Station Vertical_6">
-			<circle id="Ellipse 17_9" cx="1596" cy="2257" r="13" fill="#3C3C3C" />
+			<circle id="Ellipse 17_9" cx="1596" cy="2257" r="13" fill={zoneBackgroundColor} />
 		</g>
 		<g id="Station Vertical_7">
 			<circle id="Ellipse 17_10" cx="1463" cy="1352" r="13" fill="#1E1E1E" />
@@ -1128,7 +1133,14 @@
 			<rect id="Rectangle 23_3" x="1586" y="2711" width="20" height="20" fill="#1E1E1E" />
 		</g>
 		<g id="Terminal Station Vertical_3">
-			<rect id="Rectangle 23_4" x="1745" y="2247" width="20" height="20" fill="#3C3C3C" />
+			<rect
+				id="Rectangle 23_4"
+				x="1745"
+				y="2247"
+				width="20"
+				height="20"
+				fill={zoneBackgroundColor}
+			/>
 		</g>
 		<g id="Station Horizontal_3">
 			<circle
@@ -1137,7 +1149,7 @@
 				cy="1236"
 				r="13"
 				transform="rotate(-90 1775 1236)"
-				fill="#3C3C3C"
+				fill={zoneBackgroundColor}
 			/>
 		</g>
 		<g id="Station Horizontal_4">
@@ -1147,7 +1159,7 @@
 				cy="1236"
 				r="13"
 				transform="rotate(-90 2083 1236)"
-				fill="#3C3C3C"
+				fill={zoneBackgroundColor}
 			/>
 		</g>
 		<g id="Station Horizontal_5">
@@ -1157,7 +1169,7 @@
 				cy="944"
 				r="13"
 				transform="rotate(-90 1987 944)"
-				fill="#3C3C3C"
+				fill={zoneBackgroundColor}
 			/>
 		</g>
 		<g id="Terminal Station Horizontal_2">
@@ -1172,10 +1184,10 @@
 			/>
 		</g>
 		<g id="Station Vertical_10">
-			<circle id="Ellipse 17_16" cx="2243" cy="792" r="13" fill="#3C3C3C" />
+			<circle id="Ellipse 17_16" cx="2243" cy="792" r="13" fill={zoneBackgroundColor} />
 		</g>
 		<g id="Station Vertical_11">
-			<circle id="Ellipse 17_17" cx="2243" cy="569" r="13" fill="#3C3C3C" />
+			<circle id="Ellipse 17_17" cx="2243" cy="569" r="13" fill={zoneBackgroundColor} />
 		</g>
 		<g id="Station Vertical_12">
 			<circle id="Ellipse 17_18" cx="2243" cy="345" r="13" fill="#1E1E1E" />
@@ -1190,13 +1202,13 @@
 			<circle id="Ellipse 17_20" cx="819" cy="1436" r="13" fill="#1E1E1E" />
 		</g>
 		<g id="Station Both_2">
-			<circle id="Ellipse 17_21" cx="1755" cy="1847" r="13" fill="#3C3C3C" />
+			<circle id="Ellipse 17_21" cx="1755" cy="1847" r="13" fill={zoneBackgroundColor} />
 		</g>
 		<g id="Station Both_3">
-			<circle id="Ellipse 17_22" cx="1755" cy="1877" r="13" fill="#3C3C3C" />
+			<circle id="Ellipse 17_22" cx="1755" cy="1877" r="13" fill={zoneBackgroundColor} />
 		</g>
 		<g id="Station Both_4">
-			<circle id="Ellipse 17_23" cx="1755" cy="1907" r="13" fill="#3C3C3C" />
+			<circle id="Ellipse 17_23" cx="1755" cy="1907" r="13" fill={zoneBackgroundColor} />
 		</g>
 		<g id="Terminal Station Horizontal_3">
 			<rect
@@ -1206,14 +1218,28 @@
 				width="20"
 				height="20"
 				transform="rotate(-90 1977 984)"
-				fill="#3C3C3C"
+				fill={zoneBackgroundColor}
 			/>
 		</g>
 		<g id="Terminal Station Vertical_5">
-			<rect id="Rectangle 23_8" x="2029" y="1113" width="20" height="20" fill="#3C3C3C" />
+			<rect
+				id="Rectangle 23_8"
+				x="2029"
+				y="1113"
+				width="20"
+				height="20"
+				fill={zoneBackgroundColor}
+			/>
 		</g>
 		<g id="Terminal Station Vertical_6">
-			<rect id="Rectangle 23_9" x="2059" y="1113" width="20" height="20" fill="#3C3C3C" />
+			<rect
+				id="Rectangle 23_9"
+				x="2059"
+				y="1113"
+				width="20"
+				height="20"
+				fill={zoneBackgroundColor}
+			/>
 		</g>
 		<g id="Station Vertical_15">
 			<circle id="Ellipse 17_24" cx="819" cy="1084" r="13" fill="#1E1E1E" />
@@ -1559,7 +1585,7 @@
 				cy="1847"
 				r="13"
 				transform="rotate(-90 2286 1847)"
-				fill="#3C3C3C"
+				fill={zoneBackgroundColor}
 			/>
 		</g>
 		<g id="Station Horizontal_15">
@@ -1579,7 +1605,7 @@
 				cy="1206"
 				r="13"
 				transform="rotate(-90 2537 1206)"
-				fill="#3C3C3C"
+				fill={zoneBackgroundColor}
 			/>
 		</g>
 		<g id="Station Horizontal_17">
@@ -1599,7 +1625,7 @@
 				cy="1877"
 				r="13"
 				transform="rotate(-90 2286 1877)"
-				fill="#3C3C3C"
+				fill={zoneBackgroundColor}
 			/>
 		</g>
 		<g id="Station Horizontal_19">
@@ -1619,7 +1645,7 @@
 				cy="1236"
 				r="13"
 				transform="rotate(-90 2537 1236)"
-				fill="#3C3C3C"
+				fill={zoneBackgroundColor}
 			/>
 		</g>
 		<g id="Station Horizontal_21">
@@ -1639,7 +1665,7 @@
 				cy="1907"
 				r="13"
 				transform="rotate(-90 2286 1907)"
-				fill="#3C3C3C"
+				fill={zoneBackgroundColor}
 			/>
 		</g>
 		<g id="Station Horizontal_23">
@@ -1674,7 +1700,7 @@
 		<g id="Terminal Station Vertical_8">
 			<rect id="Rectangle 23_11" x="2935" y="1493" width="20" height="20" fill="#1E1E1E" />
 		</g>
-		<rect id="Rectangle 38" x="1946" y="1231" width="65" height="10" fill="#3C3C3C" />
+		<rect id="Rectangle 38" x="1946" y="1231" width="65" height="10" fill={zoneBackgroundColor} />
 		<g id="Station Both_5">
 			<circle id="Ellipse 17_48" cx="1463" cy="944" r="13" fill="#1E1E1E" />
 		</g>
@@ -1822,7 +1848,7 @@
 		{#if !$hideFareZones}
 			<text
 				id="Zone 0"
-				fill="#3C3C3C"
+				fill={zoneBackgroundColor}
 				xml:space="preserve"
 				style="white-space: pre"
 				font-family="Inter"
@@ -1831,7 +1857,7 @@
 			>
 			<text
 				id="Zone 0_2"
-				fill="#3C3C3C"
+				fill={zoneBackgroundColor}
 				xml:space="preserve"
 				style="white-space: pre"
 				font-family="Inter"
@@ -1840,7 +1866,7 @@
 			>
 			<text
 				id="Zone 2"
-				fill="#3C3C3C"
+				fill={zoneBackgroundColor}
 				xml:space="preserve"
 				style="white-space: pre"
 				font-family="Inter"
@@ -1849,7 +1875,7 @@
 			>
 			<text
 				id="Zone 2_2"
-				fill="#3C3C3C"
+				fill={zoneBackgroundColor}
 				xml:space="preserve"
 				style="white-space: pre"
 				font-family="Inter"
@@ -1955,7 +1981,7 @@
 				width="20"
 				height="20"
 				transform="rotate(-90 3786 1513)"
-				fill="#3C3C3C"
+				fill={zoneBackgroundColor}
 			/>
 		</g>
 		<g id="Station Horizontal_25">
@@ -1965,7 +1991,7 @@
 				cy="1503"
 				r="13"
 				transform="rotate(-90 3497 1503)"
-				fill="#3C3C3C"
+				fill={zoneBackgroundColor}
 			/>
 		</g>
 		<g id="Station Horizontal_26">
