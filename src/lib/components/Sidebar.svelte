@@ -11,6 +11,7 @@
 		allActive
 	} from '../../routes/stores';
 	import M1Details from './linedetails/M1Details.svelte';
+	import M2Details from './linedetails/M2Details.svelte';
 
 	function getActiveRouteName() {
 		switch (true) {
@@ -50,7 +51,7 @@
 			case 'M1':
 				return M1Details;
 			case 'M2':
-				return null;
+				return M2Details;
 			case 'M3':
 				return null;
 		}
