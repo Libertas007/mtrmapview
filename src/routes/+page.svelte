@@ -24,6 +24,7 @@
 <style>
 	.sidebyside {
 		display: flex;
+		align-items: flex-start;
 	}
 
 	.over {

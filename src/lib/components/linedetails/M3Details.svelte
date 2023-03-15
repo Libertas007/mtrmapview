@@ -1,0 +1,195 @@
+<p>Line overview:</p>
+<svg width="100%" viewBox="0 0 650 445" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<g id="Metro 3" clip-path="url(#clip0_532_675)">
+		<rect width="650" height="445" fill="#1E1E1E" />
+		<path
+			id="Line 1"
+			d="M85 430H65H45C28.4315 430 15 416.569 15 400L15 45C15 28.4315 28.4315 15 45 15H65L85 15C101.569 15 115 28.4315 115 45L115 400C115 416.569 101.569 430 85 430Z"
+			stroke="#FF0000"
+			stroke-width="30"
+			stroke-linecap="square"
+		/>
+		<g id="Station Vertical">
+			<circle id="Ellipse 17" cx="115" cy="76" r="13" fill="#1E1E1E" />
+		</g>
+		<g id="Station Vertical_2">
+			<circle id="Ellipse 17_2" cx="115" cy="171" r="13" fill="#1E1E1E" />
+		</g>
+		<g id="Station Vertical_3">
+			<circle id="Ellipse 17_3" cx="115" cy="266" r="13" fill="#1E1E1E" />
+		</g>
+		<g id="Station Vertical_4">
+			<circle id="Ellipse 17_4" cx="115" cy="361" r="13" fill="#1E1E1E" />
+		</g>
+		<g id="Direction arrow">
+			<mask
+				id="mask0_532_675"
+				style="mask-type:alpha"
+				maskUnits="userSpaceOnUse"
+				x="100"
+				y="296"
+				width="30"
+				height="32"
+			>
+				<rect
+					id="Rectangle 24"
+					x="100"
+					y="328"
+					width="32"
+					height="30"
+					transform="rotate(-90 100 328)"
+					fill="#D9D9D9"
+				/>
+			</mask>
+			<g mask="url(#mask0_532_675)">
+				<path
+					id="Line 54"
+					d="M100 313L115 302.036L130 313"
+					stroke="#1E1E1E"
+					stroke-width="10"
+					stroke-linecap="square"
+				/>
+			</g>
+		</g>
+		<g id="Direction arrow_2">
+			<mask
+				id="mask1_532_675"
+				style="mask-type:alpha"
+				maskUnits="userSpaceOnUse"
+				x="0"
+				y="298"
+				width="30"
+				height="32"
+			>
+				<rect
+					id="Rectangle 24_2"
+					x="30"
+					y="298"
+					width="32"
+					height="30"
+					transform="rotate(90 30 298)"
+					fill="#D9D9D9"
+				/>
+			</mask>
+			<g mask="url(#mask1_532_675)">
+				<path
+					id="Line 54_2"
+					d="M30 313L15 323.964L5.21094e-07 313"
+					stroke="#1E1E1E"
+					stroke-width="10"
+					stroke-linecap="square"
+				/>
+			</g>
+		</g>
+		<g id="Direction arrow_3">
+			<mask
+				id="mask2_532_675"
+				style="mask-type:alpha"
+				maskUnits="userSpaceOnUse"
+				x="100"
+				y="106"
+				width="30"
+				height="32"
+			>
+				<rect
+					id="Rectangle 24_3"
+					x="100"
+					y="138"
+					width="32"
+					height="30"
+					transform="rotate(-90 100 138)"
+					fill="#D9D9D9"
+				/>
+			</mask>
+			<g mask="url(#mask2_532_675)">
+				<path
+					id="Line 54_3"
+					d="M100 123L115 112.036L130 123"
+					stroke="#1E1E1E"
+					stroke-width="10"
+					stroke-linecap="square"
+				/>
+			</g>
+		</g>
+		<g id="Direction arrow_4">
+			<mask
+				id="mask3_532_675"
+				style="mask-type:alpha"
+				maskUnits="userSpaceOnUse"
+				x="0"
+				y="108"
+				width="30"
+				height="32"
+			>
+				<rect
+					id="Rectangle 24_4"
+					x="30"
+					y="108"
+					width="32"
+					height="30"
+					transform="rotate(90 30 108)"
+					fill="#D9D9D9"
+				/>
+			</mask>
+			<g mask="url(#mask3_532_675)">
+				<path
+					id="Line 54_4"
+					d="M30 123L15 133.964L5.21094e-07 123"
+					stroke="#1E1E1E"
+					stroke-width="10"
+					stroke-linecap="square"
+				/>
+			</g>
+		</g>
+		<text
+			id="Cotton Hills Airport"
+			fill="#D9D9D9"
+			xml:space="preserve"
+			style="white-space: pre"
+			font-family="Inter"
+			font-size="40"
+			letter-spacing="0em"><tspan x="150" y="280.545">Cotton Hills Airport&#10;</tspan></text
+		>
+		<text
+			id="Cotton Hills Lake"
+			fill="#D9D9D9"
+			xml:space="preserve"
+			style="white-space: pre"
+			font-family="Inter"
+			font-size="40"
+			letter-spacing="0em"><tspan x="150" y="375.545">Cotton Hills Lake&#10;</tspan></text
+		>
+		<text
+			id="Cotton Hills Acacia"
+			fill="#D9D9D9"
+			xml:space="preserve"
+			style="white-space: pre"
+			font-family="Inter"
+			font-size="40"
+			letter-spacing="0em"><tspan x="150" y="185.545">Cotton Hills Acacia</tspan></text
+		>
+		<text
+			id="Cotton Hills Jungle Village"
+			fill="#D9D9D9"
+			xml:space="preserve"
+			style="white-space: pre"
+			font-family="Inter"
+			font-size="40"
+			letter-spacing="0em"><tspan x="150" y="90.5455">Cotton Hills Jungle Village</tspan></text
+		>
+	</g>
+	<defs>
+		<clipPath id="clip0_532_675">
+			<rect width="650" height="445" fill="white" />
+		</clipPath>
+	</defs>
+</svg>
+
+<p>
+	The metro line M3 is the newest and shortest metro lines on the network. It's also the only
+	circular line.
+</p>
+<p>
+	The line M3 makes a clockwise journey in the Cotton Hills area serving their four station. This
+	line was made so passengers in Cotton Hills can travel in both directions around the circle.
+</p>

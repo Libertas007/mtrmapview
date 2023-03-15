@@ -10,8 +10,14 @@
 		m3Active,
 		allActive
 	} from '../../routes/stores';
+	import L1Details from './linedetails/L1Details.svelte';
+	import L2Details from './linedetails/L2Details.svelte';
+	import L3Details from './linedetails/L3Details.svelte';
+	import L4Details from './linedetails/L4Details.svelte';
+	import L5Details from './linedetails/L5Details.svelte';
 	import M1Details from './linedetails/M1Details.svelte';
 	import M2Details from './linedetails/M2Details.svelte';
+	import M3Details from './linedetails/M3Details.svelte';
 
 	function getActiveRouteName() {
 		switch (true) {
@@ -39,26 +45,26 @@
 	function getLineDetails(line: string) {
 		switch (line) {
 			case 'L1':
-				return null;
+				return L1Details;
 			case 'L2':
-				return null;
+				return L2Details;
 			case 'L3':
-				return null;
+				return L3Details;
 			case 'L4':
-				return null;
+				return L4Details;
 			case 'L5':
-				return null;
+				return L5Details;
 			case 'M1':
 				return M1Details;
 			case 'M2':
 				return M2Details;
 			case 'M3':
-				return null;
+				return M3Details;
 		}
 	}
 </script>
 
-<aside class="main">
+<aside>
 	<h2>Line details</h2>
 
 	{#if $allActive}
@@ -72,6 +78,7 @@
 <style>
 	aside {
 		padding: 10px;
+		height: 100%;
 		width: 200px;
 		border-right: 1px solid #3c3c3c;
 	}

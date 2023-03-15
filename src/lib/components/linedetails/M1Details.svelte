@@ -251,4 +251,11 @@
 		>
 	</g>
 </svg>
-<p>The line M1 was the first line in my world.</p>
+<p>
+	The line M1 was the first line in my world. It is also the only line that has one-way section
+	(Cotton Hills loop).
+</p>
+<p>
+	The line has a night service that terminates at Spawn Village and runs between 20:00 and 4:00 in
+	the night.
+</p>

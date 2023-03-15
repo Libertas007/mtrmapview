@@ -1,0 +1,55 @@
+<svg width="558" height="902" viewBox="0 0 558 902" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Local Trains 2" clip-path="url(#clip0_533_761)">
+<rect width="558" height="902" fill="#1E1E1E"/>
+<path id="Line 2" d="M25 597L25 888" stroke="#D81159" stroke-width="10" stroke-linecap="square"/>
+<path id="Line 4" d="M25 13L25 521.5L25 553C25 569.569 38.4315 583 55 583H86" stroke="#D81159" stroke-width="10" stroke-linecap="square"/>
+<path id="Line 5" d="M5 35L5 543.5V553C5 580.614 27.3858 603 55 603H86" stroke="#D81159" stroke-width="10" stroke-linecap="square"/>
+<path id="Line 3" d="M5 888L5 405.599L5 13" stroke="#D81159" stroke-width="10" stroke-linecap="square"/>
+<g id="Station Vertical">
+<circle id="Ellipse 17" cx="15" cy="403" r="13" fill="#1E1E1E"/>
+</g>
+<g id="Station Vertical_2">
+<circle id="Ellipse 17_2" cx="15" cy="688" r="13" fill="#1E1E1E"/>
+</g>
+<g id="Station Vertical_3">
+<circle id="Ellipse 17_3" cx="15" cy="498" r="13" fill="#1E1E1E"/>
+</g>
+<g id="Station Vertical_4">
+<circle id="Ellipse 17_4" cx="15" cy="783" r="13" fill="#1E1E1E"/>
+</g>
+<g id="Station Vertical_5">
+<circle id="Ellipse 17_5" cx="15" cy="118" r="13" fill="#1E1E1E"/>
+</g>
+<g id="Station Vertical_6">
+<circle id="Ellipse 17_6" cx="15" cy="213" r="13" fill="#1E1E1E"/>
+</g>
+<g id="Station Vertical_7">
+<circle id="Ellipse 17_7" cx="15" cy="308" r="13" fill="#1E1E1E"/>
+</g>
+<g id="Terminal Station Vertical">
+<rect id="Rectangle 23" x="5" y="868" width="20" height="20" fill="#1E1E1E"/>
+</g>
+<text id="Birch Hill" fill="#D9D9D9" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="40" letter-spacing="0em"><tspan x="100" y="228.545">Birch Hill</tspan></text>
+<text id="Spruce Village" fill="#D9D9D9" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="40" letter-spacing="0em"><tspan x="100" y="323.545">Spruce Village&#10;</tspan></text>
+<text id="Birch Mountains" fill="#D9D9D9" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="40" letter-spacing="0em"><tspan x="100" y="417.545">Birch Mountains</tspan></text>
+<text id="Crazy Mountains" fill="#D9D9D9" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="40" letter-spacing="0em"><tspan x="100" y="512.545">Crazy Mountains</tspan></text>
+<text id="Cliffside Village" fill="#D9D9D9" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="40" letter-spacing="0em"><tspan x="100" y="606.545">Cliffside Village</tspan></text>
+<text id="Cliffside Birch Lake" fill="#D9D9D9" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="40" letter-spacing="0em"><tspan x="100" y="796.545">Cliffside Birch Lake</tspan></text>
+<text id="Cliffside Village South" fill="#D9D9D9" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="40" letter-spacing="0em"><tspan x="100" y="701.545">Cliffside Village South</tspan></text>
+<text id="Lakeside Icy Mountain" fill="#D9D9D9" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="40" letter-spacing="0em"><tspan x="100" y="891.545">Lakeside Icy Mountain</tspan></text>
+<text id="Meadow Lake Island" fill="#D9D9D9" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="40" letter-spacing="0em"><tspan x="100" y="133.545">Meadow Lake Island</tspan></text>
+<text id="Wolf Village" fill="#D9D9D9" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="40" letter-spacing="0em"><tspan x="100" y="38.5455">Wolf Village</tspan></text>
+<g id="Terminal Station Vertical_2">
+<rect id="Rectangle 23_2" x="5" y="13" width="20" height="20" fill="#1E1E1E"/>
+</g>
+<g id="Terminal Station Horizontal">
+<rect id="Rectangle 23_3" x="66" y="603" width="20" height="20" transform="rotate(-90 66 603)" fill="#1E1E1E"/>
+</g>
+<rect id="Rectangle 38" x="10" y="617" width="65" height="10" transform="rotate(-90 10 617)" fill="#1E1E1E"/>
+</g>
+<defs>
+<clipPath id="clip0_533_761">
+<rect width="558" height="902" fill="white"/>
+</clipPath>
+</defs>
+</svg>

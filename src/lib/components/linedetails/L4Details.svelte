@@ -1,0 +1,114 @@
+<p>Line overview:</p>
+<svg width="100%" viewBox="0 0 558 617" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<g id="Local Trains 4" clip-path="url(#clip0_533_874)">
+		<rect width="558" height="617" fill="#1E1E1E" />
+		<path
+			id="Line 2"
+			d="M25 603L25 277.724L25 13"
+			stroke="#0CA3E3"
+			stroke-width="10"
+			stroke-linecap="square"
+		/>
+		<path
+			id="Line 3"
+			d="M5 603L5 277.724L5 13"
+			stroke="#0CA3E3"
+			stroke-width="10"
+			stroke-linecap="square"
+		/>
+		<g id="Station Vertical">
+			<circle id="Ellipse 17" cx="15" cy="403" r="13" fill="#1E1E1E" />
+		</g>
+		<g id="Station Vertical_2">
+			<circle id="Ellipse 17_2" cx="15" cy="498" r="13" fill="#1E1E1E" />
+		</g>
+		<g id="Station Vertical_3">
+			<circle id="Ellipse 17_3" cx="15" cy="118" r="13" fill="#1E1E1E" />
+		</g>
+		<g id="Station Vertical_4">
+			<circle id="Ellipse 17_4" cx="15" cy="213" r="13" fill="#1E1E1E" />
+		</g>
+		<g id="Station Vertical_5">
+			<circle id="Ellipse 17_5" cx="15" cy="308" r="13" fill="#1E1E1E" />
+		</g>
+		<g id="Terminal Station Vertical">
+			<rect id="Rectangle 23" x="5" y="583" width="20" height="20" fill="#1E1E1E" />
+		</g>
+		<text
+			id="New Heights Village"
+			fill="#D9D9D9"
+			xml:space="preserve"
+			style="white-space: pre"
+			font-family="Inter"
+			font-size="40"
+			letter-spacing="0em"><tspan x="100" y="322.545">New Heights Village</tspan></text
+		>
+		<text
+			id="Spruce Basin Village"
+			fill="#D9D9D9"
+			xml:space="preserve"
+			style="white-space: pre"
+			font-family="Inter"
+			font-size="40"
+			letter-spacing="0em"><tspan x="100" y="417.545">Spruce Basin Village</tspan></text
+		>
+		<text
+			id="Snowy Mountain Village"
+			fill="#D9D9D9"
+			xml:space="preserve"
+			style="white-space: pre"
+			font-family="Inter"
+			font-size="40"
+			letter-spacing="0em"><tspan x="100" y="511.545">Snowy Mountain Village</tspan></text
+		>
+		<text
+			id="Lakeside Icy Mountain"
+			fill="#D9D9D9"
+			xml:space="preserve"
+			style="white-space: pre"
+			font-family="Inter"
+			font-size="40"
+			letter-spacing="0em"><tspan x="100" y="606.545">Lakeside Icy Mountain</tspan></text
+		>
+		<text
+			id="Meadow Lake Island"
+			fill="#D9D9D9"
+			xml:space="preserve"
+			style="white-space: pre"
+			font-family="Inter"
+			font-size="40"
+			letter-spacing="0em"><tspan x="100" y="132.545">Meadow Lake Island</tspan></text
+		>
+		<text
+			id="The Bad Men Mountain"
+			fill="#D9D9D9"
+			xml:space="preserve"
+			style="white-space: pre"
+			font-family="Inter"
+			font-size="40"
+			letter-spacing="0em"><tspan x="100" y="227.545">The Bad Men Mountain</tspan></text
+		>
+		<text
+			id="Wolf Village"
+			fill="#D9D9D9"
+			xml:space="preserve"
+			style="white-space: pre"
+			font-family="Inter"
+			font-size="40"
+			letter-spacing="0em"><tspan x="100" y="38.5455">Wolf Village</tspan></text
+		>
+		<g id="Terminal Station Vertical_2">
+			<rect id="Rectangle 23_2" x="5" y="13" width="20" height="20" fill="#1E1E1E" />
+		</g>
+	</g>
+	<defs>
+		<clipPath id="clip0_533_874">
+			<rect width="558" height="617" fill="white" />
+		</clipPath>
+	</defs>
+</svg>
+
+<p>
+	The line L4 is a Local Trains line. It has seven stations and shares five of them with lines L1
+	and L5, it doesn't have any station without connections to other lines.
+</p>
