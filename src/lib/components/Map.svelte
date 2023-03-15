@@ -107,6 +107,7 @@
 						setAll(true);
 					}
 					break;
+				case 'ESCAPE':
 				case 'C':
 					setAll(true);
 					break;
