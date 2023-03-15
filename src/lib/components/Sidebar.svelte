@@ -10,6 +10,7 @@
 		m3Active,
 		allActive
 	} from '../../routes/stores';
+	import M1Details from './linedetails/M1Details.svelte';
 
 	function getActiveRouteName() {
 		switch (true) {
@@ -30,6 +31,29 @@
 			case $m3Active:
 				return 'M3';
 		}
+
+		return '';
+	}
+
+	function getLineDetails(line: string) {
+		switch (line) {
+			case 'L1':
+				return null;
+			case 'L2':
+				return null;
+			case 'L3':
+				return null;
+			case 'L4':
+				return null;
+			case 'L5':
+				return null;
+			case 'M1':
+				return M1Details;
+			case 'M2':
+				return null;
+			case 'M3':
+				return null;
+		}
 	}
 </script>
 
@@ -40,6 +64,7 @@
 		<p>Select a line to get started.</p>
 	{:else}
 		<h3>Line {getActiveRouteName()}</h3>
+		<svelte:component this={getLineDetails(getActiveRouteName())} />
 	{/if}
 </aside>
 
