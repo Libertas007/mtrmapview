@@ -1,3 +1,4 @@
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import {
@@ -710,7 +711,19 @@
 			font-size="40"
 			letter-spacing="0em"><tspan x="2270" y="123.545">Blacksmith Village</tspan></text
 		>
-		<g id="M2 box">
+		<g
+			id="M2 box"
+			on:click={() => {
+				if ($allActive) {
+					setAll(false);
+					$m2Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="m2 line"
+			class:dim={!$m2Active}
+		>
 			<rect id="Rectangle 7" x="117" y="844" width="70" height="70" rx="20" fill="#1C48E2" />
 			<text
 				id="M2"
@@ -722,7 +735,19 @@
 				letter-spacing="0em"><tspan x="125.088" y="892.091">M2</tspan></text
 			>
 		</g>
-		<g id="L1 box">
+		<g
+			id="L1 box"
+			on:click={() => {
+				if ($allActive) {
+					setAll(false);
+					$l1Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l1 line"
+			class:dim={!$l1Active}
+		>
 			<rect id="Rectangle 7_2" x="1127" y="732" width="70" height="70" rx="20" fill="#DDB011" />
 			<text
 				id="L1"
@@ -734,7 +759,19 @@
 				letter-spacing="0em"><tspan x="1144.33" y="780.091">L1</tspan></text
 			>
 		</g>
-		<g id="L3 box">
+		<g
+			id="L3 box"
+			on:click={() => {
+				if ($allActive) {
+					setAll(false);
+					$l3Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l3 line"
+			class:dim={!$l3Active}
+		>
 			<rect id="Rectangle 7_3" x="1884" y="974" width="70" height="70" rx="20" fill="#7813A8" />
 			<text
 				id="L3"
@@ -746,7 +783,19 @@
 				letter-spacing="0em"><tspan x="1897.41" y="1022.09">L3</tspan></text
 			>
 		</g>
-		<g id="L4 box">
+		<g
+			id="L4 box"
+			on:click={() => {
+				if ($allActive) {
+					setAll(false);
+					$l4Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l4 line"
+			class:dim={!$l4Active}
+		>
 			<rect id="Rectangle 7_4" x="2945" y="1300" width="70" height="70" rx="20" fill="#0CA3E3" />
 			<text
 				id="L4"
@@ -758,7 +807,19 @@
 				letter-spacing="0em"><tspan x="2958.33" y="1348.09">L4</tspan></text
 			>
 		</g>
-		<g id="L5 box">
+		<g
+			id="L5 box"
+			on:click={() => {
+				if ($allActive) {
+					setAll(false);
+					$l5Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l5 line"
+			class:dim={!$l5Active}
+		>
 			<rect id="Rectangle 7_5" x="2945" y="1398" width="70" height="70" rx="20" fill="#FF8200" />
 			<text
 				id="L5"
@@ -770,7 +831,19 @@
 				letter-spacing="0em"><tspan x="2958.92" y="1446.09">L5</tspan></text
 			>
 		</g>
-		<g id="L5 box_2">
+		<g
+			id="L5 box_2"
+			on:click={() => {
+				if ($allActive) {
+					setAll(false);
+					$l5Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l5 line"
+			class:dim={!$l5Active}
+		>
 			<rect id="Rectangle 7_6" x="3761" y="1398" width="70" height="70" rx="20" fill="#FF8200" />
 			<text
 				id="L5_2"
@@ -782,7 +855,19 @@
 				letter-spacing="0em"><tspan x="3774.92" y="1446.09">L5</tspan></text
 			>
 		</g>
-		<g id="L4 box_2">
+		<g
+			id="L4 box_2"
+			on:click={() => {
+				if ($allActive) {
+					setAll(false);
+					$l4Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l4 line"
+			class:dim={!$l4Active}
+		>
 			<rect id="Rectangle 7_7" x="1756" y="2678" width="70" height="70" rx="20" fill="#0CA3E3" />
 			<text
 				id="L4_2"
@@ -794,7 +879,19 @@
 				letter-spacing="0em"><tspan x="1769.33" y="2726.09">L4</tspan></text
 			>
 		</g>
-		<g id="L2a box">
+		<g
+			id="L2a box"
+			on:click={() => {
+				if ($allActive) {
+					setAll(false);
+					$l2Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l2 line"
+			class:dim={!$l2Active}
+		>
 			<rect id="Rectangle 7_8" x="1494" y="2287" width="70" height="70" rx="20" fill="#D81159" />
 			<text
 				id="L2a"
@@ -806,7 +903,19 @@
 				letter-spacing="0em"><tspan x="1497.83" y="2335.09">L2a</tspan></text
 			>
 		</g>
-		<g id="L2a box_2">
+		<g
+			id="L2a box_2"
+			on:click={() => {
+				if ($allActive) {
+					setAll(false);
+					$l2Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l2 line"
+			class:dim={!$l2Active}
+		>
 			<rect id="Rectangle 7_9" x="2945" y="1202" width="70" height="70" rx="20" fill="#D81159" />
 			<text
 				id="L2a_2"
@@ -818,7 +927,19 @@
 				letter-spacing="0em"><tspan x="2948.83" y="1250.09">L2a</tspan></text
 			>
 		</g>
-		<g id="L3 box_2">
+		<g
+			id="L3 box_2"
+			on:click={() => {
+				if ($allActive) {
+					setAll(false);
+					$l3Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l3 line"
+			class:dim={!$l3Active}
+		>
 			<rect id="Rectangle 7_10" x="1311" y="1494" width="70" height="70" rx="20" fill="#7813A8" />
 			<text
 				id="L3_2"
@@ -830,7 +951,19 @@
 				letter-spacing="0em"><tspan x="1324.41" y="1542.09">L3</tspan></text
 			>
 		</g>
-		<g id="M2 box_2">
+		<g
+			id="M2 box_2"
+			on:click={() => {
+				if ($allActive) {
+					setAll(false);
+					$m2Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="m2 line"
+			class:dim={!$m2Active}
+		>
 			<rect id="Rectangle 7_11" x="2143" y="74" width="70" height="70" rx="20" fill="#1C48E2" />
 			<text
 				id="M2_2"
@@ -842,7 +975,19 @@
 				letter-spacing="0em"><tspan x="2151.09" y="122.091">M2</tspan></text
 			>
 		</g>
-		<g id="M1 box">
+		<g
+			id="M1 box"
+			on:click={() => {
+				if ($allActive) {
+					setAll(false);
+					$m1Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="m1 line"
+			class:dim={!$m1Active}
+		>
 			<rect id="Rectangle 7_12" x="460" y="396" width="70" height="70" rx="20" fill="#079F4D" />
 			<text
 				id="M1"
@@ -854,7 +999,19 @@
 				letter-spacing="0em"><tspan x="470.619" y="444.091">M1</tspan></text
 			>
 		</g>
-		<g id="M3 box">
+		<g
+			id="M3 box"
+			on:click={() => {
+				if ($allActive) {
+					setAll(false);
+					$m3Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="m3 line"
+			class:dim={!$m3Active}
+		>
 			<rect id="Rectangle 7_13" x="550" y="396" width="70" height="70" rx="20" fill="#FF0000" />
 			<text
 				id="M3"
@@ -866,7 +1023,19 @@
 				letter-spacing="0em"><tspan x="557.525" y="444.091">M3</tspan></text
 			>
 		</g>
-		<g id="M1 box_2">
+		<g
+			id="M1 box_2"
+			on:click={() => {
+				if ($allActive) {
+					setAll(false);
+					$m1Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="m1 line"
+			class:dim={!$m1Active}
+		>
 			<rect id="Rectangle 7_14" x="1720" y="2287" width="70" height="70" rx="20" fill="#079F4D" />
 			<text
 				id="M1_2"
@@ -878,7 +1047,19 @@
 				letter-spacing="0em"><tspan x="1730.62" y="2335.09">M1</tspan></text
 			>
 		</g>
-		<g id="L1 box_2">
+		<g
+			id="L1 box_2"
+			on:click={() => {
+				if ($allActive) {
+					setAll(false);
+					$l1Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l1 line"
+			class:dim={!$l1Active}
+		>
 			<rect id="Rectangle 7_15" x="1847" y="1086" width="70" height="70" rx="20" fill="#DDB011" />
 			<text
 				id="L1_2"
@@ -890,7 +1071,19 @@
 				letter-spacing="0em"><tspan x="1864.33" y="1134.09">L1</tspan></text
 			>
 		</g>
-		<g id="L2 box">
+		<g
+			id="L2 box"
+			on:click={() => {
+				if ($allActive) {
+					setAll(false);
+					$l2Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l2 line"
+			class:dim={!$l2Active}
+		>
 			<rect id="Rectangle 7_16" x="1658" y="2682" width="70" height="70" rx="20" fill="#D81159" />
 			<text
 				id="L2"
@@ -902,7 +1095,19 @@
 				letter-spacing="0em"><tspan x="1671.98" y="2730.09">L2</tspan></text
 			>
 		</g>
-		<g id="L2 box_2">
+		<g
+			id="L2 box_2"
+			on:click={() => {
+				if ($allActive) {
+					setAll(false);
+					$l2Active = true;
+				} else {
+					setAll(true);
+				}
+			}}
+			class="l2 line"
+			class:dim={!$l2Active}
+		>
 			<rect id="Rectangle 7_17" x="1945" y="1089" width="70" height="70" rx="20" fill="#D81159" />
 			<text
 				id="L2_2"
